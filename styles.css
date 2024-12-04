@@ -1,0 +1,94 @@
+/* General Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #808080;
+  color: #ffffff;
+}
+
+/* Calculator Container */
+.calculator {
+  width: 90%;
+  max-width: 350px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Display Styling */
+.calculator input[type="text"] {
+  width: 94%;
+  height: 80px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: #ffffff;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Grid */
+.calculator button {
+  width: 22%;
+  height: 60px;
+  margin: 1%;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.calculator button:hover {
+  background-color: #555;
+}
+
+.calculator button:active {
+  background-color: #666;
+  transform: scale(0.98);
+}
+
+/* Special Button Styles */
+.calculator button.clear {
+  background-color: #b71c1c;
+}
+
+.calculator button.clear:hover {
+  background-color: #c62828;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .calculator {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .calculator input[type="text"] {
+    height: 50px;
+    font-size: 1.2em;
+  }
+
+  .calculator button {
+    height: 50px;
+    font-size: 1em;
+  }
+}
