@@ -8,6 +8,7 @@ html {
 
 /* Body Styling */
 body {
+  padding-top: 80px;
   font-family: "Arial", sans-serif;
   display: flex;
   justify-content: center;
